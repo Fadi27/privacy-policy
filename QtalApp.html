@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PickMal – Deine Ernährungs- & Symptom-App</title>
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #8F9779;
+      --accent: #4c523d;
+      --bg: #f7f9f6;
+      --text: #222;
+      --card: #fff;
+      --radius: 18px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 36px 0 24px 0;
+      text-align: center;
+      border-bottom-left-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+      box-shadow: 0 4px 24px rgba(143,151,121,0.08);
+    }
+    header h1 {
+      margin: 0 0 8px 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      opacity: 0.95;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+      margin-bottom: 48px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: 0 2px 16px rgba(143,151,121,0.07);
+      padding: 32px 24px;
+      flex: 1 1 260px;
+      min-width: 260px;
+      max-width: 320px;
+      text-align: center;
+      transition: transform 0.15s;
+    }
+    .card:hover {
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 32px rgba(143,151,121,0.13);
+    }
+    .card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card-desc {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
+    .cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .cta-btn {
+      background: var(--accent);
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 16px 36px;
+      border: none;
+      border-radius: 32px;
+      box-shadow: 0 2px 12px rgba(76,82,61,0.10);
+      cursor: pointer;
+      margin-bottom: 12px;
+      transition: background 0.2s, transform 0.1s;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+    .cta-btn:hover {
+      background: #6d745a;
+      transform: scale(1.04);
+    }
+    .cta-note {
+      font-size: 0.98rem;
+      color: #666;
+      opacity: 0.85;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 0 16px 0;
+      color: #888;
+      font-size: 0.98rem;
+      background: transparent;
+    }
+    @media (max-width: 800px) {
+      .features {
+        flex-direction: column;
+        gap: 24px;
+      }
+      .container {
+        padding: 24px 8px;
+      }
+    }
+  </style>
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/8F9779/apple.png"/>
+</head>
+<body>
+  <header>
+    <h1>PickMal</h1>
+    <p>Deine smarte App für Ernährungstagebuch, Symptom-Tracking & KI-Analyse</p>
+  </header>
+  <div class="container">
+    <div class="features">
+      <div class="card">
+        <div class="card-icon">🍏</div>
+        <div class="card-title">Ernährungstagebuch</div>
+        <div class="card-desc">Dokumentiere deine Mahlzeiten, Snacks und Getränke – einfach, schnell und übersichtlich.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🩺</div>
+        <div class="card-title">Symptom-Tracking</div>
+        <div class="card-desc">Halte Beschwerden, Stimmungen und Unverträglichkeiten fest. Erkenne Zusammenhänge und Muster.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">✨</div>
+        <div class="card-title">KI-Analyse</div>
+        <div class="card-desc">Lass dir von moderner KI helfen, Muster und mögliche Auslöser zu erkennen – individuell & datenschutzfreundlich.</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <div class="card-title">Statistiken & Export</div>
+        <div class="card-desc">Erhalte anschauliche Auswertungen und exportiere deine Daten als PDF oder Excel für Arztbesuche.</div>
+      </div>
+    </div>
+    <div class="cta">
+      <a class="cta-btn" href="#download">App jetzt herunterladen</a>
+      <div class="cta-note">Verfügbar für iOS & Android – demnächst im App Store & Google Play</div>
+    </div>
+  </div>
+  <footer>
+    &copy; 2026 PickMal – Entwickelt mit ❤️ für deine Gesundheit
+  </footer>
+</body>
+</html>
